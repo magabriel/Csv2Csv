@@ -1,0 +1,16 @@
+services:
+  filesystem:
+    class: Symfony\Component\Filesystem\Filesystem
+    
+  version:
+    class: Skel\Lib\Version
+    
+  books.converter:
+    class: Csv2Csv\Converter\NewReleasesDatafeedConverter
+    calls:
+      - [ setDiscount, ["%converter.book.discount%"] ] 
+      - [ setMarkUp, ["%converter.book.markUp%"] ]
+
+  covers.converter:
+    class: Csv2Csv\Converter\NewReleasesCoversConverter
+      

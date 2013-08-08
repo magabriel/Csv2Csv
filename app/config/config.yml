@@ -1,0 +1,14 @@
+imports:
+- { resource: build.yml }
+- { resource: services.yml }
+
+parameters:
+  application: 
+    name:         Symfony CLI skeleton
+    slug:         csv2csv    # Used to name the built phar
+    description:  "Converter between input ebook CSV file to import CSV file"
+    
+  # Converter
+  converter.book.discount: .4
+  converter.book.markup: .15          
+
