@@ -3,6 +3,8 @@ Csv2Csv
 
 Converter between CSV formats created as a proof-of-concept implementation of the [symfony-cli-skeleton](http://github.com/magabriel/symfony-cli-skeleton).
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/36ddadfb-07a7-48a4-9d09-bf2991a03c3d/mini.png)](https://insight.sensiolabs.com/projects/36ddadfb-07a7-48a4-9d09-bf2991a03c3d)
+
 License
 -------
 
