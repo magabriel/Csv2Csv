@@ -1,4 +1,7 @@
 {
+    "name": "Csv2Csv",
+    "description": "Csv to Csv converter (proof of concept for symfony-cli-skeleton)",
+    "license": "MIT",
 	"require": {
 	    "symfony/console":                 "2.*",
 	    "symfony/filesystem":              "2.*",

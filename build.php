@@ -6,7 +6,6 @@ namespace Csv2Csv;
 
 use Skel\DependencyInjection\Application;
 use Skel\Lib\Version;
-use Symfony\Component\Yaml\Yaml;
 
 // the autoloader
 $loader = require __DIR__.'/vendor/autoload.php';

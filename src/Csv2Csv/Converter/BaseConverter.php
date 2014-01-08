@@ -84,7 +84,9 @@ abstract class BaseConverter
 
             // complete missing input fields with blanks
             if (count($inputDef['fields']) > count($record)) {
-                for ($i = count($record); $i < count($inputDef['fields']); $i++) {
+                $numFields = count($record);
+                $numDefFields = count($inputDef['fields']);
+                for ($i = $numFields; $i < $numDefFields; $i++) {
                     array_push($record, '');
                 }
             }
@@ -141,7 +143,7 @@ abstract class BaseConverter
     {
         array_walk(
             $record,
-            function (&$field, $key) use ($fromEncoding, $toEncoding) {
+            function (&$field) use ($fromEncoding, $toEncoding) {
                 $field = mb_convert_encoding($field, $toEncoding, $fromEncoding);
             }
         );
