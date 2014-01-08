@@ -1,5 +1,5 @@
 {
-    "name": "csv2csv",
+    "name": "magabriel/csv2csv",
     "description": "Csv to Csv converter (proof of concept for symfony-cli-skeleton)",
     "license": "MIT",
 	"require": {
